@@ -39,7 +39,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS =True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-ALLOWED_HOSTS = ['backend-v342.onrender.com']
+ALLOWED_HOSTS = ['backend-v342.onrender.com' , '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -155,7 +155,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Media Folder
 MEDIA_URL = '/media/'
